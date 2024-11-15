@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteo de Intercambio de Regalos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Intercambio de Regalos</h1>
+    <div class="form-container">
+      <input type="text" id="nameInput" placeholder="Ingresa tu nombre">
+      <button onclick="addParticipant()">Agregar Participante</button>
+    </div>
+    <ul id="participantList"></ul>
+    <button onclick="generateDraw()" class="draw-btn">Generar Sorteo</button>
+    <p id="instruction" style="display: none;">Cada participante puede ver a quién le toca hacerle el regalo.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
